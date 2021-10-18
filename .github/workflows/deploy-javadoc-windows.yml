@@ -1,4 +1,4 @@
-name: Deploy Javadoc
+name: Deploy Javadoc Windows
 
 on: [push, pull_request]
 
