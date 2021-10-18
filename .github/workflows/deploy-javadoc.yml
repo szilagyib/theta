@@ -18,8 +18,8 @@ jobs:
       - name: Generate Javadoc
         run: ./gradlew aggregateJavadoc
       - name: Deploy Javadoc
-        uses: JamesIves/github-pages-deploy-action@3.5.9
+        uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           branch: master
           folder: build/docs/aggregateJavadoc
-          target_folder: javadoc
+          target_folder: javadoc/sources
