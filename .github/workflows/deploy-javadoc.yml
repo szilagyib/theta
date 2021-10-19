@@ -21,6 +21,6 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
           branch: gh-pages
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_PAT: x-access-token:${{ secrets.GITHUB_TOKEN }}
           folder: build/docs/aggregateJavadoc
           target_folder: javadoc
