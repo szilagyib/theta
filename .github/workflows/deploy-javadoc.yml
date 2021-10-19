@@ -20,6 +20,7 @@ jobs:
       - name: Deploy Javadoc
         uses: JamesIves/github-pages-deploy-action@3.7.1
         with:
-          branch: master
+          branch: gh-pages
+          GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           folder: build/docs/aggregateJavadoc
           target_folder: javadoc/sources
