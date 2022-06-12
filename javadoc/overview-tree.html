@@ -155,6 +155,9 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li><a href="hu/bme/mit/theta/core/type/inttype/package-tree.html">hu.bme.mit.theta.core.type.inttype</a>, </li>
 <li><a href="hu/bme/mit/theta/core/type/rattype/package-tree.html">hu.bme.mit.theta.core.type.rattype</a>, </li>
 <li><a href="hu/bme/mit/theta/core/utils/package-tree.html">hu.bme.mit.theta.core.utils</a>, </li>
+<li><a href="hu/bme/mit/theta/ctl/package-tree.html">hu.bme.mit.theta.ctl</a>, </li>
+<li><a href="hu/bme/mit/theta/ctl/dsl/gen/package-tree.html">hu.bme.mit.theta.ctl.dsl.gen</a>, </li>
+<li><a href="hu/bme/mit/theta/ctl/parser/package-tree.html">hu.bme.mit.theta.ctl.parser</a>, </li>
 <li><a href="hu/bme/mit/theta/solver/package-tree.html">hu.bme.mit.theta.solver</a>, </li>
 <li><a href="hu/bme/mit/theta/solver/impl/package-tree.html">hu.bme.mit.theta.solver.impl</a>, </li>
 <li><a href="hu/bme/mit/theta/solver/smtlib/package-tree.html">hu.bme.mit.theta.solver.smtlib</a>, </li>
@@ -234,6 +237,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.dsl.impl.<a href="hu/bme/mit/theta/core/dsl/impl/TypeCreatorVisitor.html" title="class in hu.bme.mit.theta.core.dsl.impl"><span class="typeNameLink">TypeCreatorVisitor</span></a></li>
 </ul>
 </li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslBaseVisitor.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslBaseVisitor</span></a>&lt;T&gt; (implements hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslVisitor.html" title="interface in hu.bme.mit.theta.ctl.dsl.gen">CtlDslVisitor</a>&lt;T&gt;)</li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2BaseVisitor.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2BaseVisitor</span></a>&lt;T&gt; (implements hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Visitor.html" title="interface in hu.bme.mit.theta.solver.smtlib.dsl.gen">SMTLIBv2Visitor</a>&lt;T&gt;)</li>
 <li class="circle">hu.bme.mit.theta.sts.dsl.gen.<a href="hu/bme/mit/theta/sts/dsl/gen/StsDslBaseVisitor.html" title="class in hu.bme.mit.theta.sts.dsl.gen"><span class="typeNameLink">StsDslBaseVisitor</span></a>&lt;T&gt; (implements hu.bme.mit.theta.sts.dsl.gen.<a href="hu/bme/mit/theta/sts/dsl/gen/StsDslVisitor.html" title="interface in hu.bme.mit.theta.sts.dsl.gen">StsDslVisitor</a>&lt;T&gt;)</li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslBaseVisitor.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslBaseVisitor</span></a>&lt;T&gt; (implements hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslVisitor.html" title="interface in hu.bme.mit.theta.xsts.dsl.gen">XstsDslVisitor</a>&lt;T&gt;)</li>
@@ -335,6 +339,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.type.bvtype.<a href="hu/bme/mit/theta/core/type/bvtype/BvULeqExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype"><span class="typeNameLink">BvULeqExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.bvtype.<a href="hu/bme/mit/theta/core/type/bvtype/BvULtExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype"><span class="typeNameLink">BvULtExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.bvtype.<a href="hu/bme/mit/theta/core/type/bvtype/BvURemExpr.html" title="class in hu.bme.mit.theta.core.type.bvtype"><span class="typeNameLink">BvURemExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlAndExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlAndExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlEqExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlEqExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlImplyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlImplyExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlOrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlOrExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.abstracttype.<a href="hu/bme/mit/theta/core/type/abstracttype/DivExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype"><span class="typeNameLink">DivExpr</span></a>&lt;ExprType&gt;
 <ul>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpDivExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpDivExpr</span></a></li>
@@ -399,6 +407,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/XorExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">XorExpr</span></a></li>
 </ul>
 </li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/ReleaseExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">ReleaseExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.abstracttype.<a href="hu/bme/mit/theta/core/type/abstracttype/RemExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype"><span class="typeNameLink">RemExpr</span></a>&lt;ExprType&gt;
 <ul>
 <li class="circle">hu.bme.mit.theta.core.type.inttype.<a href="hu/bme/mit/theta/core/type/inttype/IntRemExpr.html" title="class in hu.bme.mit.theta.core.type.inttype"><span class="typeNameLink">IntRemExpr</span></a></li>
@@ -411,6 +420,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.type.rattype.<a href="hu/bme/mit/theta/core/type/rattype/RatSubExpr.html" title="class in hu.bme.mit.theta.core.type.rattype"><span class="typeNameLink">RatSubExpr</span></a></li>
 </ul>
 </li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/UntilExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">UntilExpr</span></a></li>
 </ul>
 </li>
 <li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/BoolExprs.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">BoolExprs</span></a></li>
@@ -461,6 +471,12 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.dsl.<a href="hu/bme/mit/theta/core/dsl/CoreDslManager.html" title="class in hu.bme.mit.theta.core.dsl"><span class="typeNameLink">CoreDslManager</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.parser.<a href="hu/bme/mit/theta/core/parser/CoreInterpreter.html" title="class in hu.bme.mit.theta.core.parser"><span class="typeNameLink">CoreInterpreter</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.parser.<a href="hu/bme/mit/theta/core/parser/CoreParser.html" title="class in hu.bme.mit.theta.core.parser"><span class="typeNameLink">CoreParser</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.<a href="hu/bme/mit/theta/ctl/CTL.html" title="class in hu.bme.mit.theta.ctl"><span class="typeNameLink">CTL</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.<a href="hu/bme/mit/theta/ctl/CTL.Builder.html" title="class in hu.bme.mit.theta.ctl"><span class="typeNameLink">CTL.Builder</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.<a href="hu/bme/mit/theta/ctl/CTL.Edge.html" title="class in hu.bme.mit.theta.ctl"><span class="typeNameLink">CTL.Edge</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.<a href="hu/bme/mit/theta/ctl/CTL.Loc.html" title="class in hu.bme.mit.theta.ctl"><span class="typeNameLink">CTL.Loc</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslBaseListener.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslBaseListener</span></a> (implements hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslListener.html" title="interface in hu.bme.mit.theta.ctl.dsl.gen">CtlDslListener</a>)</li>
+<li class="circle">hu.bme.mit.theta.ctl.parser.<a href="hu/bme/mit/theta/ctl/parser/CtlParser.html" title="class in hu.bme.mit.theta.ctl.parser"><span class="typeNameLink">CtlParser</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.decl.<a href="hu/bme/mit/theta/core/decl/Decl.html" title="class in hu.bme.mit.theta.core.decl"><span class="typeNameLink">Decl</span></a>&lt;DeclType&gt;
 <ul>
 <li class="circle">hu.bme.mit.theta.core.decl.<a href="hu/bme/mit/theta/core/decl/ConstDecl.html" title="class in hu.bme.mit.theta.core.decl"><span class="typeNameLink">ConstDecl</span></a>&lt;DeclType&gt;
@@ -736,6 +752,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li class="circle">hu.bme.mit.theta.cfa.dsl.gen.<a href="hu/bme/mit/theta/cfa/dsl/gen/CfaDslLexer.html" title="class in hu.bme.mit.theta.cfa.dsl.gen"><span class="typeNameLink">CfaDslLexer</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslLexer.html" title="class in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslLexer</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslLexer.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslLexer</span></a></li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Lexer.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Lexer</span></a></li>
 <li class="circle">hu.bme.mit.theta.sts.dsl.gen.<a href="hu/bme/mit/theta/sts/dsl/gen/StsDslLexer.html" title="class in hu.bme.mit.theta.sts.dsl.gen"><span class="typeNameLink">StsDslLexer</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslLexer.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslLexer</span></a></li>
@@ -746,6 +763,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li class="circle">hu.bme.mit.theta.cfa.dsl.gen.<a href="hu/bme/mit/theta/cfa/dsl/gen/CfaDslParser.html" title="class in hu.bme.mit.theta.cfa.dsl.gen"><span class="typeNameLink">CfaDslParser</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslParser.html" title="class in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslParser</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser</span></a></li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Parser.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Parser</span></a></li>
 <li class="circle">hu.bme.mit.theta.sts.dsl.gen.<a href="hu/bme/mit/theta/sts/dsl/gen/StsDslParser.html" title="class in hu.bme.mit.theta.sts.dsl.gen"><span class="typeNameLink">StsDslParser</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser</span></a></li>
@@ -883,6 +901,68 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslParser.TypeContext.html" title="class in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslParser.TypeContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslParser.TypeListContext.html" title="class in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslParser.TypeListContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslParser.UnaryExprContext.html" title="class in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslParser.UnaryExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.AccessContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.AccessContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.AccessorExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.AccessorExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.AdditiveExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.AdditiveExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.AndExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.AndExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ArrayReadAccessContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ArrayReadAccessContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ArrayTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ArrayTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ArrayWriteAccessContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ArrayWriteAccessContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ArrLitExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ArrLitExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.AssignStmtContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.AssignStmtContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.AssumeStmtContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.AssumeStmtContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BitwiseAndExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BitwiseAndExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BitwiseNotExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BitwiseNotExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BitwiseOrExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BitwiseOrExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BitwiseShiftExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BitwiseShiftExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BitwiseXorExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BitwiseXorExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BoolTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BoolTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BvConcatExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BvConcatExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BvExtendExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BvExtendExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BvExtractAccessContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BvExtractAccessContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BvLitExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BvLitExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.BvTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.BvTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.DeclContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.DeclContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.DeclListContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.DeclListContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.EqualityExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.EqualityExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ExistsExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ExistsExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ExprListContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ExprListContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FalseExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FalseExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ForallExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ForallExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FpFuncExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FpFuncExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FpLitExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FpLitExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FpTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FpTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FuncAccessContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FuncAccessContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FuncLitExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FuncLitExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.FuncTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.FuncTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.HavocStmtContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.HavocStmtContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.IdExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.IdExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.IffExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.IffExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ImplyExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ImplyExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.IntLitExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.IntLitExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.IntTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.IntTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.IteExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.IteExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.MultiplicativeExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.MultiplicativeExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.NotExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.NotExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.OrExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.OrExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ParenExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ParenExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.PathFormulaContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.PathFormulaContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.PrimaryExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.PrimaryExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.PrimeAccessContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.PrimeAccessContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.QuantifiedExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.QuantifiedExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.RatLitExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.RatLitExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.RatTypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.RatTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.RelationExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.RelationExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.ReturnStmtContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.ReturnStmtContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.StateFormulaContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.StateFormulaContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.StmtContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.StmtContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.StmtListContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.StmtListContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.TrueExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.TrueExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.TypeContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.TypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.TypeListContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.TypeListContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.UnaryExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.UnaryExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslParser.XorExprContext.html" title="class in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslParser.XorExprContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Parser.Annotate_termContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Parser.Annotate_termContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Parser.Attribute_valueContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Parser.Attribute_valueContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Parser.AttributeContext.html" title="class in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Parser.AttributeContext</span></a></li>
@@ -997,6 +1077,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.AssumeStmtContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.AssumeStmtContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.BlockStmtContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.BlockStmtContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.BoolTypeContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.BoolTypeContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.CtlExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.CtlExprContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.CustomTypeContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.CustomTypeContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.EnvSetContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.EnvSetContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.EqualityExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.EqualityExprContext</span></a></li>
@@ -1018,8 +1099,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.NotExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.NotExprContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.OrExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.OrExprContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.ParenExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.ParenExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.PathFormulaContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.PathFormulaContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.PrimaryExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.PrimaryExprContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.RelationExprContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.RelationExprContext</span></a></li>
+<li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.StateFormulaContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.StateFormulaContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.StmtContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.StmtContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.TranSetContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.TranSetContext</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslParser.TransitionSetContext.html" title="class in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslParser.TransitionSetContext</span></a></li>
@@ -1343,6 +1426,10 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.type.inttype.<a href="hu/bme/mit/theta/core/type/inttype/IntToRatExpr.html" title="class in hu.bme.mit.theta.core.type.inttype"><span class="typeNameLink">IntToRatExpr</span></a></li>
 </ul>
 </li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlExistsExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlExistsExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlForallExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlForallExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/CtlNotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">CtlNotExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/FinallyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">FinallyExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpAbsExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpAbsExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpFromBvExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpFromBvExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpIsNanExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpIsNanExpr</span></a></li>
@@ -1350,6 +1437,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpSqrtExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpSqrtExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpToBvExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpToBvExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpToFpExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpToFpExpr</span></a></li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/GloballyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">GloballyExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.abstracttype.<a href="hu/bme/mit/theta/core/type/abstracttype/NegExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype"><span class="typeNameLink">NegExpr</span></a>&lt;ExprType&gt;
 <ul>
 <li class="circle">hu.bme.mit.theta.core.type.fptype.<a href="hu/bme/mit/theta/core/type/fptype/FpNegExpr.html" title="class in hu.bme.mit.theta.core.type.fptype"><span class="typeNameLink">FpNegExpr</span></a></li>
@@ -1357,6 +1445,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <li class="circle">hu.bme.mit.theta.core.type.rattype.<a href="hu/bme/mit/theta/core/type/rattype/RatNegExpr.html" title="class in hu.bme.mit.theta.core.type.rattype"><span class="typeNameLink">RatNegExpr</span></a></li>
 </ul>
 </li>
+<li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/NextExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">NextExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.booltype.<a href="hu/bme/mit/theta/core/type/booltype/NotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype"><span class="typeNameLink">NotExpr</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.type.abstracttype.<a href="hu/bme/mit/theta/core/type/abstracttype/PosExpr.html" title="class in hu.bme.mit.theta.core.type.abstracttype"><span class="typeNameLink">PosExpr</span></a>&lt;ExprType&gt;
 <ul>
@@ -1532,6 +1621,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li class="circle">hu.bme.mit.theta.cfa.dsl.gen.<a href="hu/bme/mit/theta/cfa/dsl/gen/CfaDslListener.html" title="interface in hu.bme.mit.theta.cfa.dsl.gen"><span class="typeNameLink">CfaDslListener</span></a></li>
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslListener.html" title="interface in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslListener</span></a></li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslListener.html" title="interface in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslListener</span></a></li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Listener.html" title="interface in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Listener</span></a></li>
 <li class="circle">hu.bme.mit.theta.sts.dsl.gen.<a href="hu/bme/mit/theta/sts/dsl/gen/StsDslListener.html" title="interface in hu.bme.mit.theta.sts.dsl.gen"><span class="typeNameLink">StsDslListener</span></a></li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslListener.html" title="interface in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslListener</span></a></li>
@@ -1542,6 +1632,7 @@ $('.navPadding').css('padding-top', $('.fixedNav').css("height"));
 <ul>
 <li class="circle">hu.bme.mit.theta.cfa.dsl.gen.<a href="hu/bme/mit/theta/cfa/dsl/gen/CfaDslVisitor.html" title="interface in hu.bme.mit.theta.cfa.dsl.gen"><span class="typeNameLink">CfaDslVisitor</span></a>&lt;T&gt;</li>
 <li class="circle">hu.bme.mit.theta.core.dsl.gen.<a href="hu/bme/mit/theta/core/dsl/gen/CoreDslVisitor.html" title="interface in hu.bme.mit.theta.core.dsl.gen"><span class="typeNameLink">CoreDslVisitor</span></a>&lt;T&gt;</li>
+<li class="circle">hu.bme.mit.theta.ctl.dsl.gen.<a href="hu/bme/mit/theta/ctl/dsl/gen/CtlDslVisitor.html" title="interface in hu.bme.mit.theta.ctl.dsl.gen"><span class="typeNameLink">CtlDslVisitor</span></a>&lt;T&gt;</li>
 <li class="circle">hu.bme.mit.theta.solver.smtlib.dsl.gen.<a href="hu/bme/mit/theta/solver/smtlib/dsl/gen/SMTLIBv2Visitor.html" title="interface in hu.bme.mit.theta.solver.smtlib.dsl.gen"><span class="typeNameLink">SMTLIBv2Visitor</span></a>&lt;T&gt;</li>
 <li class="circle">hu.bme.mit.theta.sts.dsl.gen.<a href="hu/bme/mit/theta/sts/dsl/gen/StsDslVisitor.html" title="interface in hu.bme.mit.theta.sts.dsl.gen"><span class="typeNameLink">StsDslVisitor</span></a>&lt;T&gt;</li>
 <li class="circle">hu.bme.mit.theta.xsts.dsl.gen.<a href="hu/bme/mit/theta/xsts/dsl/gen/XstsDslVisitor.html" title="interface in hu.bme.mit.theta.xsts.dsl.gen"><span class="typeNameLink">XstsDslVisitor</span></a>&lt;T&gt;</li>

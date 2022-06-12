@@ -26,7 +26,7 @@
     catch(err) {
     }
 //-->
-var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9};
+var data = {"i0":9,"i1":9,"i2":9,"i3":9,"i4":9,"i5":9,"i6":9,"i7":9,"i8":9,"i9":9,"i10":9,"i11":9,"i12":9,"i13":9,"i14":9,"i15":9,"i16":9,"i17":9,"i18":9,"i19":9,"i20":9,"i21":9,"i22":9,"i23":9,"i24":9,"i25":9,"i26":9,"i27":9,"i28":9,"i29":9,"i30":9,"i31":9};
 var tabs = {65535:["t0","All Methods"],1:["t1","Static Methods"],8:["t4","Concrete Methods"]};
 var altColor = "altColor";
 var rowColor = "rowColor";
@@ -198,53 +198,107 @@ extends java.lang.Object</pre>
 <td class="colLast">&nbsp;</td>
 </tr>
 <tr id="i7" class="rowColor">
+<td class="colFirst"><code>static <a href="CtlAndExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlAndExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlAnd(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">CtlAnd</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+      <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i8" class="altColor">
+<td class="colFirst"><code>static <a href="CtlEqExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlEqExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlEq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">CtlEq</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i9" class="rowColor">
+<td class="colFirst"><code>static <a href="CtlExistsExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlExistsExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlExists(hu.bme.mit.theta.core.type.Expr)">CtlExists</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i10" class="altColor">
+<td class="colFirst"><code>static <a href="CtlForallExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlForallExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlForall(hu.bme.mit.theta.core.type.Expr)">CtlForall</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i11" class="rowColor">
+<td class="colFirst"><code>static <a href="CtlImplyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlImplyExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlImply(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">CtlImply</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+        <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i12" class="altColor">
+<td class="colFirst"><code>static <a href="CtlNotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlNotExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlNot(hu.bme.mit.theta.core.type.Expr)">CtlNot</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i13" class="rowColor">
+<td class="colFirst"><code>static <a href="CtlOrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlOrExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#CtlOr(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">CtlOr</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i14" class="altColor">
 <td class="colFirst"><code>static <a href="ExistsExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ExistsExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Exists(java.lang.Iterable,hu.bme.mit.theta.core.type.Expr)">Exists</a></span>&#8203;(java.lang.Iterable&lt;? extends <a href="../../decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;&gt;&nbsp;paramDecls,
       <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i8" class="altColor">
+<tr id="i15" class="rowColor">
 <td class="colFirst"><code>static <a href="FalseExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">FalseExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#False()">False</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i9" class="rowColor">
+<tr id="i16" class="altColor">
+<td class="colFirst"><code>static <a href="FinallyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">FinallyExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Finally(hu.bme.mit.theta.core.type.Expr)">Finally</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i17" class="rowColor">
 <td class="colFirst"><code>static <a href="ForallExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ForallExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Forall(java.lang.Iterable,hu.bme.mit.theta.core.type.Expr)">Forall</a></span>&#8203;(java.lang.Iterable&lt;? extends <a href="../../decl/ParamDecl.html" title="class in hu.bme.mit.theta.core.decl">ParamDecl</a>&lt;?&gt;&gt;&nbsp;paramDecls,
       <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i10" class="altColor">
+<tr id="i18" class="altColor">
+<td class="colFirst"><code>static <a href="GloballyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">GloballyExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Globally(hu.bme.mit.theta.core.type.Expr)">Globally</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i19" class="rowColor">
 <td class="colFirst"><code>static <a href="IffExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">IffExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Iff(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Iff</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i11" class="rowColor">
+<tr id="i20" class="altColor">
 <td class="colFirst"><code>static <a href="ImplyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ImplyExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Imply(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Imply</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
      <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i12" class="altColor">
+<tr id="i21" class="rowColor">
+<td class="colFirst"><code>static <a href="NextExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">NextExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Next(hu.bme.mit.theta.core.type.Expr)">Next</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i22" class="altColor">
 <td class="colFirst"><code>static <a href="NotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">NotExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Not(hu.bme.mit.theta.core.type.Expr)">Not</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i13" class="rowColor">
+<tr id="i23" class="rowColor">
 <td class="colFirst"><code>static <a href="OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Or(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Or</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op1,
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op2)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i14" class="altColor">
+<tr id="i24" class="altColor">
 <td class="colFirst"><code>static <a href="OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Or(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Or</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op1,
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op2,
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op3)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i15" class="rowColor">
+<tr id="i25" class="rowColor">
 <td class="colFirst"><code>static <a href="OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Or(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Or</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op1,
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op2,
@@ -252,7 +306,7 @@ extends java.lang.Object</pre>
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op4)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i16" class="altColor">
+<tr id="i26" class="altColor">
 <td class="colFirst"><code>static <a href="OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Or(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Or</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op1,
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op2,
@@ -261,17 +315,29 @@ extends java.lang.Object</pre>
   <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op5)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i17" class="rowColor">
+<tr id="i27" class="rowColor">
 <td class="colFirst"><code>static <a href="OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Or(java.lang.Iterable)">Or</a></span>&#8203;(java.lang.Iterable&lt;? extends <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&gt;&nbsp;ops)</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i18" class="altColor">
+<tr id="i28" class="altColor">
+<td class="colFirst"><code>static <a href="ReleaseExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ReleaseExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Release(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Release</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+       <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i29" class="rowColor">
 <td class="colFirst"><code>static <a href="TrueExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">TrueExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#True()">True</a></span>()</code></th>
 <td class="colLast">&nbsp;</td>
 </tr>
-<tr id="i19" class="rowColor">
+<tr id="i30" class="altColor">
+<td class="colFirst"><code>static <a href="UntilExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">UntilExpr</a></code></td>
+<th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Until(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Until</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+     <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
+<td class="colLast">&nbsp;</td>
+</tr>
+<tr id="i31" class="rowColor">
 <td class="colFirst"><code>static <a href="XorExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">XorExpr</a></code></td>
 <th class="colSecond" scope="row"><code><span class="memberNameLink"><a href="#Xor(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">Xor</a></span>&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</code></th>
@@ -496,7 +562,7 @@ extends java.lang.Object</pre>
 <a id="Or(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
 <!--   -->
 </a>
-<ul class="blockListLast">
+<ul class="blockList">
 <li class="blockList">
 <h4>Or</h4>
 <pre class="methodSignature">public static&nbsp;<a href="OrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">OrExpr</a>&nbsp;Or&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op1,
@@ -504,6 +570,120 @@ extends java.lang.Object</pre>
                         <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op3,
                         <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op4,
                         <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op5)</pre>
+</li>
+</ul>
+<a id="CtlNot(hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlNot</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlNotExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlNotExpr</a>&nbsp;CtlNot&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</pre>
+</li>
+</ul>
+<a id="CtlExists(hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlExists</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlExistsExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlExistsExpr</a>&nbsp;CtlExists&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</pre>
+</li>
+</ul>
+<a id="CtlForall(hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlForall</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlForallExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlForallExpr</a>&nbsp;CtlForall&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</pre>
+</li>
+</ul>
+<a id="CtlAnd(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlAnd</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlAndExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlAndExpr</a>&nbsp;CtlAnd&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+                                <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</pre>
+</li>
+</ul>
+<a id="CtlOr(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlOr</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlOrExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlOrExpr</a>&nbsp;CtlOr&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+                              <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</pre>
+</li>
+</ul>
+<a id="CtlImply(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlImply</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlImplyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlImplyExpr</a>&nbsp;CtlImply&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+                                    <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</pre>
+</li>
+</ul>
+<a id="CtlEq(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>CtlEq</h4>
+<pre class="methodSignature">public static&nbsp;<a href="CtlEqExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">CtlEqExpr</a>&nbsp;CtlEq&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+                              <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</pre>
+</li>
+</ul>
+<a id="Globally(hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Globally</h4>
+<pre class="methodSignature">public static&nbsp;<a href="GloballyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">GloballyExpr</a>&nbsp;Globally&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</pre>
+</li>
+</ul>
+<a id="Finally(hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Finally</h4>
+<pre class="methodSignature">public static&nbsp;<a href="FinallyExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">FinallyExpr</a>&nbsp;Finally&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</pre>
+</li>
+</ul>
+<a id="Next(hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Next</h4>
+<pre class="methodSignature">public static&nbsp;<a href="NextExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">NextExpr</a>&nbsp;Next&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;op)</pre>
+</li>
+</ul>
+<a id="Until(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockList">
+<li class="blockList">
+<h4>Until</h4>
+<pre class="methodSignature">public static&nbsp;<a href="UntilExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">UntilExpr</a>&nbsp;Until&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+                              <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</pre>
+</li>
+</ul>
+<a id="Release(hu.bme.mit.theta.core.type.Expr,hu.bme.mit.theta.core.type.Expr)">
+<!--   -->
+</a>
+<ul class="blockListLast">
+<li class="blockList">
+<h4>Release</h4>
+<pre class="methodSignature">public static&nbsp;<a href="ReleaseExpr.html" title="class in hu.bme.mit.theta.core.type.booltype">ReleaseExpr</a>&nbsp;Release&#8203;(<a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;leftOp,
+                                  <a href="../Expr.html" title="interface in hu.bme.mit.theta.core.type">Expr</a>&lt;<a href="BoolType.html" title="class in hu.bme.mit.theta.core.type.booltype">BoolType</a>&gt;&nbsp;rightOp)</pre>
 </li>
 </ul>
 </li>

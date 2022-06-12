@@ -58,6 +58,9 @@ hu.bme.mit.theta.core.type.functype
 hu.bme.mit.theta.core.type.inttype
 hu.bme.mit.theta.core.type.rattype
 hu.bme.mit.theta.core.utils
+hu.bme.mit.theta.ctl
+hu.bme.mit.theta.ctl.dsl.gen
+hu.bme.mit.theta.ctl.parser
 hu.bme.mit.theta.solver
 hu.bme.mit.theta.solver.impl
 hu.bme.mit.theta.solver.smtlib
