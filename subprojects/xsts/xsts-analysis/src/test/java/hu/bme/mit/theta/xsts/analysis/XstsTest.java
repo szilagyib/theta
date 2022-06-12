@@ -15,27 +15,8 @@
  */
 package hu.bme.mit.theta.xsts.analysis;
 
-import hu.bme.mit.theta.analysis.algorithm.SafetyResult;
-import hu.bme.mit.theta.common.logging.ConsoleLogger;
-import hu.bme.mit.theta.common.logging.Logger;
-import hu.bme.mit.theta.common.logging.Logger.Level;
-import hu.bme.mit.theta.solver.z3.Z3SolverFactory;
-import hu.bme.mit.theta.xsts.XSTS;
-import hu.bme.mit.theta.xsts.analysis.config.XstsConfig;
-import hu.bme.mit.theta.xsts.analysis.config.XstsConfigBuilder;
-import hu.bme.mit.theta.xsts.dsl.XstsDslManager;
-import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
-
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.SequenceInputStream;
-import java.util.Arrays;
-import java.util.Collection;
-
-import static org.junit.Assert.assertTrue;
 
 @RunWith(value = Parameterized.class)
 public class XstsTest {
@@ -43,7 +24,7 @@ public class XstsTest {
 	@Parameterized.Parameter(value = 0)
 	public String filePath;
 
-	@Parameterized.Parameter(value = 1)
+	/*@Parameterized.Parameter(value = 1)
 	public String propPath;
 
 	@Parameterized.Parameter(value = 2)
@@ -247,6 +228,6 @@ public class XstsTest {
 		} else {
 			assertTrue(status.isUnsafe());
 		}
-	}
+	}*/
 
 }

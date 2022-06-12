@@ -115,4 +115,55 @@ public final class BoolExprs {
 		return OrExpr.of(ImmutableList.of(op1, op2, op3, op4, op5));
 	}
 
+	// CTL state formula operators
+
+	public static CtlNotExpr CtlNot(final Expr<BoolType> op) {
+		return CtlNotExpr.of(op);
+	}
+
+	public static CtlExistsExpr CtlExists(final Expr<BoolType> op) {
+		return CtlExistsExpr.of(op);
+	}
+
+	public static CtlForallExpr CtlForall(final Expr<BoolType> op) {
+		return CtlForallExpr.of(op);
+	}
+
+	public static CtlAndExpr CtlAnd(final Expr<BoolType> leftOp, final Expr<BoolType> rightOp) {
+		return CtlAndExpr.of(leftOp, rightOp);
+	}
+
+	public static CtlOrExpr CtlOr(final Expr<BoolType> leftOp, final Expr<BoolType> rightOp) {
+		return CtlOrExpr.of(leftOp, rightOp);
+	}
+
+	public static CtlImplyExpr CtlImply(final Expr<BoolType> leftOp, final Expr<BoolType> rightOp) {
+		return CtlImplyExpr.of(leftOp, rightOp);
+	}
+
+	public static CtlEqExpr CtlEq(final Expr<BoolType> leftOp, final Expr<BoolType> rightOp) {
+		return CtlEqExpr.of(leftOp, rightOp);
+	}
+
+	// CTL path formula operators
+
+	public static GloballyExpr Globally(final Expr<BoolType> op) {
+		return GloballyExpr.of(op);
+	}
+
+	public static FinallyExpr Finally(final Expr<BoolType> op) {
+		return FinallyExpr.of(op);
+	}
+
+	public static NextExpr Next(final Expr<BoolType> op) {
+		return NextExpr.of(op);
+	}
+
+	public static UntilExpr Until(final Expr<BoolType> leftOp, final Expr<BoolType> rightOp) {
+		return UntilExpr.of(leftOp, rightOp);
+	}
+
+	public static ReleaseExpr Release(final Expr<BoolType> leftOp, final Expr<BoolType> rightOp) {
+		return ReleaseExpr.of(leftOp, rightOp);
+	}
 }

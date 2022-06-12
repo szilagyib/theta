@@ -1,7 +1,5 @@
 name: Deploy Javadoc
 
-#ez egy teszt 
-
 on: [push, pull_request]
 
 jobs:
