@@ -24,7 +24,9 @@ include(
         "solver/solver",
         "solver/solver-z3",
         "solver/solver-smtlib",
-        "solver/solver-smtlib-cli"
+        "solver/solver-smtlib-cli",
+
+        "ctl/ctl"
 )
 
 for (project in rootProject.children) {

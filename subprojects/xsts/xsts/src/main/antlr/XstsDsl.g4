@@ -6,12 +6,54 @@ xsts:
     tran=tranSet
     init=initSet
     env=envSet
-    PROP LCURLY prop=expr RCURLY;
+    PROP LCURLY prop=ctlExpr RCURLY;
+
+// C T L
+ctlExpr
+    :  stateFormula
+    ;
+
+stateFormula
+    :   (oper=CTLNOT) LPAREN op=stateFormula RPAREN
+    |   LPAREN leftOp=stateFormula RPAREN (oper=CTLAND) LPAREN rightOp=stateFormula RPAREN
+    |   LPAREN leftOp=stateFormula RPAREN (oper=CTLOR) LPAREN rightOp=stateFormula RPAREN
+    |   LPAREN leftOp=stateFormula RPAREN (oper=CTLIMPLY) LPAREN rightOp=stateFormula RPAREN
+    |   LPAREN leftOp=stateFormula RPAREN (oper=CTLEQ) LPAREN rightOp=stateFormula RPAREN
+    |   (oper=EXISTS) LPAREN pform=pathFormula RPAREN
+    |   (oper=FORALL) LPAREN pform=pathFormula RPAREN
+    |   expr
+    ;
+
+pathFormula
+    :   (oper=GLOBALLY) LPAREN op=stateFormula RPAREN
+    |   (oper=FINALLY) LPAREN op=stateFormula RPAREN
+    |   (oper=NEXT) LPAREN op=stateFormula RPAREN
+    |   LPAREN leftOp=stateFormula RPAREN (oper=UNTIL) LPAREN rightOp=stateFormula RPAREN
+    |   LPAREN leftOp=stateFormula RPAREN (oper=RELEASE) LPAREN rightOp=stateFormula RPAREN
+    ;
+
+// Boolean operators
+CTLNOT      : 'Not';
+CTLAND	    : 'And';
+CTLOR		: 'Or';
+CTLIMPLY	: 'Imply';
+CTLEQ       : 'Eq';
+
+//State operators
+GLOBALLY	: 'G';
+FINALLY	    : 'F';
+NEXT		: 'X';
+UNTIL		: 'U';
+RELEASE		: 'R';
+
+//Path quantifiers
+EXISTS    : 'E';
+FORALL    : 'A';
 
 // D E C L A R A T I O N S
 
 variableDeclaration
-    :   CTRL? VAR name=ID DP ttype=type  (EQUALS initValue=expr)?
+    :   CTRL? VAR name=ID DP ttype=type  (EQUALS initValue=ctlExpr)?
     ;
 
 typeDeclaration
@@ -269,23 +311,23 @@ blockStmt
     ;
 
 ifStmt
-    :   IF LPAREN cond=expr RPAREN then=stmt (ELSE elze=stmt)?
+    :   IF LPAREN cond=ctlExpr RPAREN then=stmt (ELSE elze=stmt)?
     ;
 
 loopStmt
-    :   FOR loopVar=ID FROM from=expr TO to=expr DO subStmt=stmt
+    :   FOR loopVar=ID FROM from=ctlExpr TO to=ctlExpr DO subStmt=stmt
     ;
 
 localVarDeclStmt
-    :   LOCAL VAR name=ID DP ttype=type (EQUALS initValue=expr)? SEMICOLON
+    :   LOCAL VAR name=ID DP ttype=type (EQUALS initValue=ctlExpr)? SEMICOLON
     ;
 
 assignArrayWriteSugar
-    :   array=ID LBRACK index=expr RBRACK ASSIGN value=expr SEMICOLON
+    :   array=ID LBRACK index=ctlExpr RBRACK ASSIGN value=ctlExpr SEMICOLON
     ;
 
 assignStmt
-	:	lhs=ID ASSIGN value=expr SEMICOLON
+	:	lhs=ID ASSIGN value=ctlExpr SEMICOLON
 	;
 
 havocStmt
@@ -293,7 +335,7 @@ havocStmt
 	;
 
 assumeStmt
-	:	ASSUME cond=expr SEMICOLON
+	:	ASSUME cond=ctlExpr SEMICOLON
 	;
 
 //
